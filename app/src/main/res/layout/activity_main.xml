@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.harsha20599.tictactoe.MainActivity"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#424242"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="TIC TAE TOE"
+                android:textColor="#eee"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:id="@+id/heading"
+                android:gravity="center"
+                android:background="#21ffffff"
+                android:layout_weight="9"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:id="@+id/rowTic"
+            android:background="@drawable/grid"
+            android:layout_weight="9">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:tag="0"
+                    android:id="@+id/image1"
+                    android:layout_weight="1"
+                    android:onClick="insert"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:tag="1"
+                    android:id="@+id/image2"
+                    android:layout_weight="1"
+                    android:onClick="insert"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:tag="2"
+                    android:id="@+id/image3"
+                    android:layout_weight="1"
+                    android:onClick="insert"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:tag="3"
+                    android:id="@+id/image4"
+                    android:layout_weight="1"
+                    android:onClick="insert"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:tag="4"
+                    android:id="@+id/image5"
+                    android:layout_weight="1"
+                    android:onClick="insert"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:tag="5"
+                    android:id="@+id/image6"
+                    android:layout_weight="1"
+                    android:onClick="insert"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:tag="6"
+                    android:id="@+id/image7"
+                    android:layout_weight="1"
+                    android:onClick="insert"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:tag="7"
+                    android:id="@+id/image8"
+                    android:layout_weight="1"
+                    android:onClick="insert"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:tag="8"
+                    android:id="@+id/image9"
+                    android:layout_weight="1"
+                    android:onClick="insert"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PLAY AGAIN"
+            android:onClick="playAgain"
+            android:textColor="#eee"
+            android:id="@+id/buttonPlayAgain"
+            android:visibility="invisible"
+            android:background="#FF5B5A5C"
+            android:padding="10dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
